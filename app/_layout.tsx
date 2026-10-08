@@ -1,11 +1,16 @@
-import { DarkTheme, DefaultTheme, ThemeProvider } from '@react-navigation/native';
+//import { DarkTheme, DefaultTheme, ThemeProvider } from '@react-navigation/native';
 import { Stack } from 'expo-router';
-import { StatusBar } from 'expo-status-bar';
-import 'react-native-reanimated';
+//import { StatusBar } from 'expo-status-bar';
 
-import { useColorScheme } from '@/hooks/use-color-scheme';
+//import { useColorScheme } from '@/hooks/use-color-scheme';
+import "@/global.css"; //Import your CSS file
 
-export const unstable_settings = {
+
+export default function RootLayout() {
+    return <Stack screenOptions={{headerShown: false}}/>
+}
+
+/*export const unstable_settings = {
   anchor: '(tabs)',
 };
 
@@ -21,4 +26,4 @@ export default function RootLayout() {
       <StatusBar style="auto" />
     </ThemeProvider>
   );
-}
+}*/
