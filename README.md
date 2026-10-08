@@ -1,50 +1,80 @@
-# Welcome to your Expo app 👋
+# Kanu
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+Kanu is a React Native mobile application built with Expo. The project focuses on providing a clean and modern experience for managing subscriptions and related account information.
 
-## Get started
+## Features
 
-1. Install dependencies
+- User sign-up and sign-in
+- Onboarding flow for new users
+- Subscription management
+- Individual subscription details
+- Insights and subscription-related information
+- User settings
+- File-based navigation with Expo Router
+- Responsive UI styling with NativeWind
 
-   ```bash
-   npm install
-   ```
+## Tech Stack
 
-2. Start the app
+- **React Native**
+- **Expo**
+- **TypeScript**
+- **Expo Router**
+- **NativeWind**
+- **Tailwind CSS**
+- **React Compiler**
 
-   ```bash
-   npx expo start
-   ```
+## Project Structure
 
-In the output, you'll find options to open the app in a
-
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
-
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
-
-## Get a fresh project
-
-When you're ready, run:
-
-```bash
-npm run reset-project
+```text
+Kanu/
+├── app/
+│   ├── (auth)/              # Authentication screens
+│   ├── (tabs)/              # Main application screens
+│   ├── onboarding.tsx       # Onboarding flow
+│   └── _layout.tsx          # Root navigation layout
+├── global.css               # Global styles
+├── metro.config.js          # Metro configuration
+├── postcss.config.mjs       # PostCSS configuration
+├── nativewind-env.d.ts      # NativeWind TypeScript definitions
+├── package.json
+└── tsconfig.json
 ```
 
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
+## Getting Started
 
-## Learn more
+### 1. Clone the repository
 
-To learn more about developing your project with Expo, look at the following resources:
+```bash
+git clone https://github.com/seriman96/react_native_recurrly.git
+cd react_native_recurrly
+```
 
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
+### 2. Install dependencies
 
-## Join the community
+```bash
+npm install
+```
 
-Join our community of developers creating universal apps.
+### 3. Start the development server
 
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+```bash
+npx expo start
+```
+
+You can then open the application using Expo Go, an Android emulator, an iOS simulator, or a development build.
+
+## Development
+
+The application uses Expo Router for navigation and follows a file-based routing structure. Most application screens and navigation logic are located inside the `app` directory.
+
+When making changes, start the development server and use the available Expo development options to preview the application.
+
+## Status
+
+This project is currently under development. Features and UI components may continue to change as development progresses.
+
+## Author
+
+**Seriman**
+
+GitHub: [@seriman96](https://github.com/seriman96)
